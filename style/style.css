@@ -1,0 +1,259 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cinzel', 'Garamond', serif;
+    color: #e6d8b1;
+    background: #0f0f0f url('https://www.transparenttextures.com/patterns/dark-wood.png');
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: #c9a038;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff2b0;
+}
+
+/* Header */
+header {
+    background: #1a120b;
+    color: #f8eec1;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #c9a038;
+    box-shadow: 0 2px 12px #000;
+}
+
+header .logo {
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: #c9a038;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    font-weight: 600;
+}
+
+/* inicio */
+.inicio {
+    background: linear-gradient(135deg, #1e1e1e, #151515);
+    color: #f2e6c2;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-bottom: 2px solid #c9a038;
+}
+
+.inicio h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #c9a038;
+}
+
+.inicio p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+}
+
+/* Botão primário */
+.btn-primary {
+    background: #c9a038;
+    color: #1a120b;
+    padding: 0.85rem 2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px #c9a03888;
+    border: 2px solid #fff0b3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #fff0b3;
+    box-shadow: 0 6px 20px #fff6ceaa;
+    transform: translateY(-2px);
+}
+
+
+/* serviços */
+.servicos {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.feature-card {
+    background: #19120a;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 2px solid #c9a03855;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    box-shadow: 0 14px 30px rgba(201, 160, 56, 0.4);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #c9a038;
+    margin-bottom: 1rem;
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f2e6c2;
+    margin-bottom: 0.7rem;
+}
+
+.feature-text {
+    color: #cabd9e;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* About */
+.about {
+    background: #1c1c1c;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #c9a038;
+    font-weight: 800;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #e6d8b1;
+    font-weight: 500;
+}
+
+/* Contact */
+.contact {
+    max-width: 600px;
+    margin: 4rem auto 6rem;
+    padding: 0 1.5rem;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #c9a038;
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 2px solid #3b2f21;
+    background: #1f1f1f;
+    color: #f2e6c2;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #c9a038;
+    outline: none;
+}
+
+.contact button {
+    width: fit-content;
+    align-self: center;
+    padding: 0.85rem 2.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    border: 2px solid #fff0b3;
+    background: #c9a038;
+    color: #1a120b;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(201, 160, 56, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact button:hover {
+    background: #fff0b3;
+    box-shadow: 0 7px 22px rgba(255, 240, 179, 0.7);
+}
+
+/* Footer */
+footer {
+    background: #1a120b;
+    color: #e6d8b1;
+    text-align: center;
+    padding: 1.2rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-top: 2px solid #c9a038;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .inicio h1 {
+        font-size: 2rem;
+    }
+
+    .servicos {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,230 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background: #121212;
+    color: #c9a038;
+    /* pergaminho amareladão */
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    background: #1a120b;
+    color: #c9a038;
+    padding: 1.2rem 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 3px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid #a27c47;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    font-weight: 600;
+}
+
+nav a {
+    color: #6b5e2a;
+    text-decoration: none;
+    background-color: #4b2e15;
+    border-radius: 20px;
+    padding: 5px;
+    border: 2px solid #121212;
+    transition: 0.6s;
+}
+
+nav a:hover {
+    background-color: #3a2310;
+}
+
+/* Main container */
+main {
+    max-width: 800px;
+    margin: 2rem auto 4rem;
+    background: #2e2b23;
+    /* fundo madeira */
+    padding: 2rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #291f16;
+    border: 2px solid #c9a441;
+    /* moldura dourada */
+}
+
+/* Title */
+h1 {
+    margin-bottom: 1.5rem;
+    color: #c9a441;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 1px 1px 2px #0008;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    flex: 1 1 220px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #6b5e2a;
+    font-family: inherit;
+    background: #1a120b;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #4b2e15;
+    outline: none;
+}
+
+/* Button */
+form button {
+    padding: 0.85rem 2.4rem;
+    font-size: 1.15rem;
+    background: #c9a441;
+    color: #2e2b23;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px #c9a44188;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background: #b0912a;
+    box-shadow: 0 6px 20px #b0912aaa;
+}
+
+/* Budget list */
+#budget-list {
+    box-shadow: 0 0 25px #16110d;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #1a120b;
+    background: #1a120b;
+}
+
+#budget-list table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Cinzel', serif;
+    color: #d7cba7;
+}
+
+#budget-list th,
+#budget-list td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #6b5e2a;
+}
+
+#budget-list th {
+    background: #1a120b;
+    color: #c9a441;
+    font-weight: 700;
+    text-shadow: 0 0 3px #0008;
+}
+
+#budget-list tbody tr:nth-child(odd) {
+    background: #1a120b;
+}
+
+#budget-list tbody tr:hover {
+    background: #140f0a;
+    cursor: pointer;
+}
+
+/* Amount */
+.amount {
+    font-weight: 700;
+    color: #c9a441;
+    text-shadow: 0 0 4px #0008;
+}
+
+/* Actions buttons */
+.actions button {
+    background: transparent;
+    border: none;
+    color: #c9a441;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-right: 0.6rem;
+    transition: color 0.3s ease;
+    font-family: 'Cinzel', serif;
+}
+
+.actions button:hover {
+    color: #b0912a;
+}
+
+/* Total */
+.total {
+    margin-top: 1.5rem;
+    text-align: right;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #c9a441;
+    text-shadow: 0 0 6px #0008;
+}
+
+/* Footer */
+footer {
+    background: #2e2b23;
+    color: #d7cba7;
+    text-align: center;
+    padding: 1.2rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    user-select: none;
+    margin-top: auto;
+    border-top: 3px solid #c9a441;
+    font-family: 'Cinzel', serif;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    form input[type="text"],
+    form input[type="number"] {
+        flex: 1 1 100%;
+    }
+
+    form button {
+        flex: 1 1 100%;
+        font-size: 1.3rem;
+    }
+}

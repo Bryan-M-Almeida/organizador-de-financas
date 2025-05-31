@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Organização Financeira</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="issue/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Tesouro Real</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <h1>Controle Total das Suas Finanças</h1>
+        <p>Organize seu dinheiro, planeje seu futuro e conquiste seus objetivos financeiros com a Tesouro Real.</p>
+        <a href="#servicos"><button class="btn-primary">Comece Agora</button></a>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <a href="orcamento.html">
+            <article class="feature-card">
+                <div class="feature-icon">📊</div>
+
+                <h3 class="feature-title">Planejamento Orçamentário</h3>
+
+                <p class="feature-text">Planeje seus gastos mensais, crie orçamentos personalizados e acompanhe suas
+                    despesas.</p>
+            </article>
+        </a>
+
+        <a href="poupanca.html">
+            <article class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3 class="feature-title">Gestão de Poupanças</h3>
+                <p class="feature-text">Defina metas de poupança e visualize seu progresso para garantir um futuro
+                    seguro.
+                </p>
+            </article>
+        </a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Sobre a Tesouro Real</h2>
+        <p>Somos uma organização dedicada a ajudar você a alcançar liberdade financeira. Com ferramentas intuitivas e um
+            time de especialistas, transformamos o jeito que você lida com seu dinheiro.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contato</h2>
+        <form onsubmit="event.preventDefault(); alert('Formulário enviado! Em breve entraremos em contato.');">
+            <input type="text" placeholder="Seu nome" required />
+            <input type="email" placeholder="Seu e-mail" required />
+            <textarea rows="4" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Tesouro Real - Todos os direitos reservados
+    </footer>
+
+</body>
+
+</html>

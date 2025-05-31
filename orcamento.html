@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orçamento - Tesouro Real</title>
+    <link rel="stylesheet" href="style/orcamento.css">
+    <link rel="shortcut icon" href="issue/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar</a></li>
+            </ul>
+        </nav>
+        <h1>Tesouro Real - Planejamento</h1>
+    </header>
+
+    <main>
+        <h1>Gerencie seu Orçamento</h1>
+
+        <form id="budget-form">
+            <input type="text" id="category" placeholder="Categoria (ex: Alimentação)" required />
+            <input type="number" id="amount" placeholder="Valor (R$)" min="0" step="0.01" required />
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <section id="budget-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Valor (R$)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="budget-items">
+                </tbody>
+            </table>
+        </section>
+
+        <div class="total" id="total-amount">Total: R$ 0,00</div>
+    </main>
+
+    <footer>
+        &copy; 2024 Tesouro Real - Todos os direitos reservados
+    </footer>
+
+    <script src="script/orcamento.js"></script>
+</body>
+
+</html>
