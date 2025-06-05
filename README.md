@@ -66,6 +66,7 @@ Desenvolvedores que curtem temas diferentes
 
 Estudantes de Front-End que querem sair do óbvio
 
+
 📌 Futuras Melhorias
 
  Sistema de conversão de moedas
@@ -75,6 +76,7 @@ Estudantes de Front-End que querem sair do óbvio
  Exportar em formato PDF
 
  Modo “Era Sombria” (dark mode medieval)
+ 
 
 👤 Criador
 
