@@ -49,6 +49,7 @@ Interface parecida com um **livro de contabilidade antigo**, cores terrosas, fon
 
 ![inicio](https://github.com/user-attachments/assets/0ee190d6-f079-4325-9d83-d6374f0270b6)
 
+---
 
 ## 🐉 Como Usar
 
@@ -58,7 +59,9 @@ Interface parecida com um **livro de contabilidade antigo**, cores terrosas, fon
    Abra o index.html no navegador de sua preferência (compatível com o feitiço moderno do JavaScript).
    Registre tuas finanças como um verdadeiro tesoureiro da corte. ```
 
-🏰 Público-Alvo
+---
+
+## 🏰 Público-Alvo
 
 Nobres e plebeus que querem gerenciar o ouro
 
@@ -66,8 +69,9 @@ Desenvolvedores que curtem temas diferentes
 
 Estudantes de Front-End que querem sair do óbvio
 
+---
 
-📌 Futuras Melhorias
+## 📌 Futuras Melhorias
 
  Sistema de conversão de moedas
 
@@ -77,12 +81,16 @@ Estudantes de Front-End que querem sair do óbvio
 
  Modo “Era Sombria” (dark mode medieval)
  
+---
 
-👤 Criador
+## 👤 Criador
 
 Feito por Bryan, alquimista do Front-End
 
-⚖️ Licença
+---
+## ⚖️ Licença
 Este projeto está sob a licença MIT. Pode usar, adaptar ou modificar à vontade.
+
+---
 
 “Guardai vossas moedas com sabedoria, pois o inverno sempre chega.”
